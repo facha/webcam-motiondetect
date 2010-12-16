@@ -1,0 +1,13 @@
+A couple of days ago I have found this blog post http://www.jperla.com/blog/post/capturing-frames-from-a-webcam-on-linux, "Capturing frames from a webcam on Linux", which I found to be a great starting point on fiddeling around with a webcam from python. This script adds motion detection to the code I've taken from the original blogpost.
+
+To get started you should have two python libraries, PyGame and OpenCV, installed. On Ubuntu that would be:
+
+  sudo apt-get install python-pygame python-opencv
+
+Once you have those, just make MotionDetect.py executable
+
+  chmod 755 MotionDetect.py
+
+and run it.
+
+You should see a 640x480 window with video from your webcam. When any movement is detected, you'll get and "Achtung!!!" message on your console (or whatever you have configured as stdout).
